@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FF000F;
+}
+
+.top {
+  position: relative;
+  background-color: #FFDECD;
+  height: calc(100vh - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo {
+  width: 500px;
+  height: 500px;
+  max-width: 90vw;
+}
+
+.bottom {
+  background-color: #FFD3BC;
+  display: flex;
+  justify-content: center;
+  padding: 50px 30px;
+}
+
+.text {
+  max-width: 1000px;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+.satu {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .satu img {
+    width: 70vw;
+  }
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  color: #FF000F;
+  animation: bounce 1.5s infinite;
+  pointer-events: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+  30% {
+    transform: translateX(-50%) translateY(-15px);
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: translateX(-50%) translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: translateX(-50%) translateY(-12px);
+    animation-timing-function: ease-out;
+  }
+}

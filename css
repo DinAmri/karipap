@@ -97,8 +97,8 @@ body {
 }
 
 .illustration {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   display: block;
-  margin: 0 auto 40px auto; /* centres it and adds space below */
+  margin: 20px auto 30px auto; /* centres it and adds space below */
 }
